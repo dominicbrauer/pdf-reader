@@ -1,0 +1,10 @@
+{
+  "provider": "Kreissparkasse Ravensburg",
+  "columns": [
+    "Datum",
+    "Erläuterung",
+    "Betrag Soll EUR",
+    "Betrag Haben EUR"
+  ],
+  "seperator": ";"
+}

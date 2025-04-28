@@ -1,0 +1,391 @@
+{
+  "0": [
+    [
+      "Datum",
+      "Erläuterung",
+      "Betrag Soll EUR",
+      "Betrag Haben EUR"
+    ],
+    [
+      "",
+      "Kontostand am 30.04.2024, Auszug Nr. 4",
+      "",
+      "152,11"
+    ],
+    [
+      "02.05.2024",
+      "Zahl.eing.kostenlos",
+      "",
+      "10,00"
+    ],
+    [
+      "",
+      "Berthold Graf Gabriele Flach Taschengeld BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "SOLADES1RVB DE28 6505 0110 0086 2000 82",
+      "",
+      ""
+    ],
+    [
+      "02.05.2024",
+      "Lohn, Gehalt, Rente",
+      "",
+      "520,00"
+    ],
+    [
+      "",
+      "Flach GmbH Lohn - Gehalt Abrechnung 04/2024",
+      "",
+      ""
+    ],
+    [
+      "",
+      "6912301810-000014 BIC / IBAN: SOLADES1RVB DE31",
+      "",
+      ""
+    ],
+    [
+      "",
+      "6505 0110 0079 4076 03",
+      "",
+      ""
+    ],
+    [
+      "06.05.2024",
+      "Überweisung online",
+      "-400,00",
+      ""
+    ],
+    [
+      "",
+      "Berthold Graf Gabriele Flach Rückzahlung Gehalt DATUM",
+      "",
+      ""
+    ],
+    [
+      "",
+      "06.05.2024, 13.18 UHR 1298201767-20240506131840",
+      "",
+      ""
+    ],
+    [
+      "",
+      "BIC / IBAN: SOLADES1RVB DE28 6505 0110 0086 2000 82",
+      "",
+      ""
+    ],
+    [
+      "10.05.2024",
+      "BargAuszDebitFremdGA",
+      "-40,00",
+      ""
+    ],
+    [
+      "",
+      "ÜBERLING.//SPARKASSE BODENSEE/DE 2024-05-10T13:34",
+      "",
+      ""
+    ],
+    [
+      "",
+      "Debitk.0 2027-12 BIC / IBAN: SOLADES1KNZ DE33 6905",
+      "",
+      ""
+    ],
+    [
+      "",
+      "0001 9000 4814 17",
+      "",
+      ""
+    ],
+    [
+      "13.05.2024",
+      "Zahl.eing.Eilzahlung / Wert: 12.05.2024",
+      "",
+      "275,00"
+    ],
+    [
+      "",
+      "LOUIS ESCHER PC & Entstaubung BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "SOLADES1RVB DE02 6505 0110 0111 8745 10",
+      "",
+      ""
+    ],
+    [
+      "13.05.2024",
+      "Kartenzahlung",
+      "-73,90",
+      ""
+    ],
+    [
+      "",
+      "Bodensee-Therme Überlingen//UEBERLI NGEN/DE",
+      "",
+      ""
+    ],
+    [
+      "",
+      "2024-05-10T21:44 Debitk.0 2027-12 BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "GENODE61UBE DE83 6906 1800 0001 4794 07",
+      "",
+      ""
+    ],
+    [
+      "15.05.2024",
+      "Kartenzahlung",
+      "-6,87",
+      ""
+    ],
+    [
+      "",
+      "REWE SAGT DANKE. 45655604//Aulendor f/DE",
+      "",
+      ""
+    ],
+    [
+      "",
+      "2024-05-14T12:27 Debitk.0 2027-12 BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "WELADEDDXXX DE41 3005 0000 0001 4843 10",
+      "",
+      ""
+    ],
+    [
+      "15.05.2024",
+      "Kartenzahlung",
+      "-5,56",
+      ""
+    ],
+    [
+      "",
+      "BAECKEREI FRICK Aulendor GIR 799488",
+      "",
+      ""
+    ],
+    [
+      "",
+      "64//AULENDORF/DE 2024-05-14T12:29 Debitk.0 2027-12",
+      "",
+      ""
+    ],
+    [
+      "",
+      "BIC / IBAN: HYVEDEMM430 DE09 5032 0191 0039 4553 40",
+      "",
+      ""
+    ],
+    [
+      "16.05.2024",
+      "entgeltfreie Buchung",
+      "",
+      "400,00"
+    ],
+    [
+      "",
+      "MICHAEL FLACH",
+      "",
+      ""
+    ]
+  ],
+  "1": [
+    [
+      "Datum",
+      "Erläuterung",
+      "Betrag Soll EUR",
+      "Betrag Haben EUR"
+    ],
+    [
+      "16.05.2024",
+      "Bargeldausz.Debitk.GA",
+      "-50,00",
+      ""
+    ],
+    [
+      "",
+      "GA NR00002186 BLZ65050110 0 16.05/10.57UHR",
+      "",
+      ""
+    ],
+    [
+      "",
+      "BLITZENRT.",
+      "",
+      ""
+    ],
+    [
+      "21.05.2024",
+      "Lastschrift",
+      "-680,61",
+      ""
+    ],
+    [
+      "",
+      "PayPal Europe S.a.r.l. et Cie S.C.A 1034451924191/.",
+      "",
+      ""
+    ],
+    [
+      "",
+      "Galaxus Deutschland GmbH, Ihr Einkauf bei Galaxus Deut",
+      "",
+      ""
+    ],
+    [
+      "",
+      "schland GmbH AWV-MELDEPFLICHT BEACHTEN HOTLINE",
+      "",
+      ""
+    ],
+    [
+      "",
+      "BUNDESBANK: (0800) 1234-111 1034451924191 BIC /",
+      "",
+      ""
+    ],
+    [
+      "",
+      "IBAN: PPLXLUL2 LU89 7510 0013 5104 200E",
+      "",
+      ""
+    ],
+    [
+      "21.05.2024",
+      "Kartenzahlung",
+      "-12,48",
+      ""
+    ],
+    [
+      "",
+      "Kaufland Bad Saulgau//Bad Saulgau/D E 2024-05-17T21:00",
+      "",
+      ""
+    ],
+    [
+      "",
+      "Debitk.0 2027-12 BIC / IBAN: SOLADEST600 DE25 6005",
+      "",
+      ""
+    ],
+    [
+      "",
+      "0101 0004 0010 50",
+      "",
+      ""
+    ],
+    [
+      "2 3.05.2024",
+      "Kartenzahlung",
+      "-1,19",
+      ""
+    ],
+    [
+      "",
+      "MUELLER SAGT DANKE//Bad Saulgau/DE",
+      "",
+      ""
+    ],
+    [
+      "",
+      "2024-05-22T17:35 Debitk.0 2027-12 BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "WELADEDDXXX DE51 3005 0000 0001 6431 13",
+      "",
+      ""
+    ],
+    [
+      "23.05.2024",
+      "Kartenzahlung",
+      "-12,82",
+      ""
+    ],
+    [
+      "",
+      "REWE SAGT DANKE. 45655569//Fronreut e/DE",
+      "",
+      ""
+    ],
+    [
+      "",
+      "2024-05-22T14:30 Debitk.0 2027-12 BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "WELADEDDXXX DE41 3005 0000 0001 4843 10",
+      "",
+      ""
+    ],
+    [
+      "27.05.2024",
+      "GutschriftÜberweisung",
+      "",
+      "490,58"
+    ],
+    [
+      "",
+      "Berthold Graf Gabriele Flach mindfactory BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "SOLADES1RVB DE28 6505 0110 0086 2000 82",
+      "",
+      ""
+    ],
+    [
+      "29.05.2024",
+      "Kartenzahlung",
+      "-6,05",
+      ""
+    ],
+    [
+      "",
+      "BAECKEREI MAYER GMBH + CO.//RAVENSB URG/DE",
+      "",
+      ""
+    ],
+    [
+      "",
+      "2024-05-28T16:29 Debitk.0 2027-12 BIC / IBAN:",
+      "",
+      ""
+    ],
+    [
+      "",
+      "GENODE61APP DE90 6649 2600 0009 9249 06",
+      "",
+      ""
+    ],
+    [
+      "",
+      "Kontostand am 31.05.2024 um 20:05 Uhr",
+      "",
+      "558,21"
+    ]
+  ],
+  "2": []
+}

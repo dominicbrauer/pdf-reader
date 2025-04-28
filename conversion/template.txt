@@ -1,0 +1,3 @@
+Umsatz;S/H;Gegenkonto;Datum;Konto;Buchungstext
+
+100,00;S;!1370;01.01.1999;Amogus;Taschengeld
