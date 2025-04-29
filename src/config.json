@@ -1,10 +1,21 @@
 {
-  "provider": "Kreissparkasse Ravensburg",
-  "columns": [
+  "format": [
+    "Umsatz",
+    "S/H",
+    "Gegenkonto",
     "Datum",
-    "Erläuterung",
-    "Betrag Soll EUR",
-    "Betrag Haben EUR"
+    "Konto",
+    "Buchungstext"
   ],
-  "seperator": ";"
+  "0": {
+    "provider": "Kreissparkasse Ravensburg",
+    "columns": [
+      "Datum",
+      "Erläuterung",
+      "Betrag Soll EUR",
+      "Betrag Haben EUR"
+    ],
+    "seperator": ";"
+  },
+  "1": {}
 }
