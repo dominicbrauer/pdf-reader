@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 import pdfplumber
 import re
+import math
 
 
 this_path = Path(__file__).resolve().parent
@@ -47,7 +48,7 @@ def emptyRow(row: list[str]) -> bool:
   return len(row) == row.count("")
 
 
-def assembleTable(data: list[list[str]]):
+def parseData(data: list[list[str]]):
   regex = r"^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[0-2])\.(\d{4})$" # detects date DD.MM.YYYY
   tiles = []
 
@@ -74,6 +75,26 @@ def getDescriptionOnly(description: list[str]):
   return " ".join(description).rsplit("BIC / IBAN")[0]
 
 
+def assembleTable(config, tiles):
+  lines = []
+
+  for tile in tiles:
+    if tile.date == "": continue
+
+    amount = "".join(tile.amount)
+    if amount[0] == '-':
+      sh = 'H'
+      amount = amount[1:]
+    else:
+      sh = 'S'
+    date = tile.date
+    description = getDescriptionOnly(tile.description)
+
+    lines.append(config["0"]["seperator"].join([amount, sh, "!1370", date, "6969", description]))
+  
+  return lines
+
+
 def main():
   data = parsePDF('example.pdf')
   config = parseConfig()
@@ -81,8 +102,17 @@ def main():
   # with open(this_path / 'example.json', 'w', encoding='utf-8') as file:
   #   json.dump(data, file, ensure_ascii=False, indent=2)
 
-  tiles = assembleTable(data)
-  print(getDescriptionOnly(tiles[12].description))
+  tiles = parseData(data)
+
+  lines = assembleTable(config, tiles)
+
+  with open(this_path / '../conversion/test.csv', 'w', encoding='utf-8') as file:
+    headings = config["0"]["seperator"].join(config["format"])
+    file.write(headings)
+    file.write('\n')
+    for line in lines:
+      file.write(line.strip())
+      file.write('\n')
 
 
 if __name__ == "__main__":
