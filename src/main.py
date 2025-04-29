@@ -47,13 +47,13 @@ def emptyRow(row: list[str]) -> bool:
   return len(row) == row.count("")
 
 
-def assembleTable(config, data: list[list[str]]):
-  regex = r"^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[0-2])\.(\d{4})$"
+def assembleTable(data: list[list[str]]):
+  regex = r"^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[0-2])\.(\d{4})$" # detects date DD.MM.YYYY
   tiles = []
 
   for table in data.values():
     if len(table) < 1: continue
-    currentTile = Tile("", "", [], [])
+    currentTile = Tile("", "", [], []) # default empty tile for the beginning of reading
 
     for idx, row in enumerate(table):
       if idx == 0: continue # the first row contains the headings, therefore we skip it
@@ -69,15 +69,20 @@ def assembleTable(config, data: list[list[str]]):
   return tiles
 
 
+def getDescriptionOnly(description: list[str]):
+  """Returns the bank statement description without the unnecessary parts"""
+  return " ".join(description).rsplit("BIC / IBAN")[0]
+
+
 def main():
   data = parsePDF('example.pdf')
   config = parseConfig()
-  
+
   # with open(this_path / 'example.json', 'w', encoding='utf-8') as file:
   #   json.dump(data, file, ensure_ascii=False, indent=2)
 
-  tiles = assembleTable(config, data)
-  print(tiles[4].amount)
+  tiles = assembleTable(data)
+  print(getDescriptionOnly(tiles[12].description))
 
 
 if __name__ == "__main__":
