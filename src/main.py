@@ -5,9 +5,6 @@ import re
 import math
 
 
-this_path = Path(__file__).resolve().parent
-
-
 class Tile():
   def __init__(self, date, heading, description, amount):
     self.date: str = date
@@ -18,14 +15,14 @@ class Tile():
 
 def parseConfig() -> dict:
   """Parses config.json and returns its data"""
-  with open(this_path / 'config.json', 'r', encoding='utf-8') as file:
+  with open(Path(__file__).resolve().parent / '../src/lib/config.json', 'r', encoding='utf-8') as file:
     return json.load(file)
 
 
-def parsePDF(file_name: str) -> dict[int, list[list[str]]]:
+def parsePDF(file_path: str) -> dict[int, list[list[str]]]:
   """Parses the given PDF's tables"""
 
-  with pdfplumber.open(this_path / "../conversion" / file_name) as pdf:
+  with pdfplumber.open(file_path) as pdf:
     data = {}
 
     for pageIdx, page in enumerate(pdf.pages):
@@ -90,30 +87,37 @@ def assembleTable(config, tiles):
     date = tile.date
     description = getDescriptionOnly(tile.description)
 
-    lines.append(config["0"]["seperator"].join([amount, sh, "!1370", date, "6969", description]))
+    lines.append(config["seperator"].join([amount, sh, config["wanted_error"] + config["contra_account"], date, config["account"], description]))
   
   return lines
 
 
-def main():
-  data = parsePDF('example.pdf')
-  config = parseConfig()
+def overwriteConfig(config, userConfig):
+  if userConfig["account"] != "":
+    config["account"] = userConfig["account"]
+  
+  if userConfig["contra_account"] != "":
+    config["contra_account"] = userConfig["contra_account"]
 
-  # with open(this_path / 'example.json', 'w', encoding='utf-8') as file:
-  #   json.dump(data, file, ensure_ascii=False, indent=2)
+  if userConfig["wanted_error"] == "off":
+    config["wanted_error"] = ""
+
+  return config
+
+
+def main(userConfig):
+  data = parsePDF(userConfig["pdf_location"])
+  config = parseConfig()
+  config = overwriteConfig(config, userConfig)
 
   tiles = parseData(data)
 
   lines = assembleTable(config, tiles)
 
-  with open(this_path / '../conversion/test.csv', 'w', encoding='utf-8') as file:
-    headings = config["0"]["seperator"].join(config["format"])
+  with open(userConfig["csv_location"], 'w', encoding='utf-8') as file:
+    headings = config["seperator"].join(config["format"])
     file.write(headings)
     file.write('\n')
     for line in lines:
       file.write(line.strip())
       file.write('\n')
-
-
-if __name__ == "__main__":
-    main()
